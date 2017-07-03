@@ -92,6 +92,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZeV-jV-XOQ">
                                 <rect key="frame" x="172" y="139" width="30" height="30"/>
                                 <state key="normal" title="Play"/>
+                                <connections>
+                                    <action selector="playTapped:" destination="jlq-5T-Qao" eventType="touchUpInside" id="nz2-YP-AHX"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Sound Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="40E-FC-P1M">
                                 <rect key="frame" x="75" y="189" width="225" height="30"/>
@@ -124,7 +127,9 @@
                     </view>
                     <connections>
                         <outlet property="RecordButton" destination="eff-N1-oIl" id="jog-uM-2rn"/>
-                        <outlet property="TextField" destination="40E-FC-P1M" id="lYX-28-E0P"/>
+                        <outlet property="addButton" destination="to5-u7-VP1" id="cML-Se-ZcW"/>
+                        <outlet property="nameTextField" destination="40E-FC-P1M" id="RkF-p5-Oho"/>
+                        <outlet property="playButton" destination="ZeV-jV-XOQ" id="IJ1-cC-WjE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rWy-fS-HMB" userLabel="First Responder" sceneMemberID="firstResponder"/>
