@@ -95,6 +95,7 @@ class SoundViewController: UIViewController {
         sound.audio = NSData(contentsOf: audioURL!)
         (UIApplication.shared.delegate as! AppDelegate).saveContext()
         
+        _ = navigationController?.popToRootViewController(animated: true)
     }
     
     
